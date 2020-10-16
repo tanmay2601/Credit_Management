@@ -1,0 +1,29 @@
+<%- include('partials/header.ejs') %>
+
+<div class="customer" style="margin-top: 20px; padding-top: 20px;">
+	<div class="container" style="margin-top: 20px;padding-top: 20px;">
+		<div class="container cardouter">
+			<div class="row text-center" style="display: flex; flex-wrap: wrap;">
+		<% customer.forEach(function(customer){ %>
+		 <div class="col-md-4 col-sm-6"style="margin-top:30px;margin-bottom:15px;">
+			<div class="card h-100">
+				  <img class="card-img-top" src="https://www.netclipart.com/pp/m/3-34714_joshua-man-person-icon.png" alt="Customer">
+				  <div class="card-body" style="font-family: 'EB Garamond', serif; line-height: 35px;">
+					 <p class="card-text"><b>Name - <%= customer.name %></b></p>
+					 <p class="card-text"><b>Email Address - <%= customer.email %></b></p>
+					 <p class="card-text"><b>Contact Number - <%= customer.mobile_number %></b></p>
+					 <p class="card-text"><b>Current Balance - Rs. <%= customer.current_balance %></b></p>
+					 <p>
+						 <a href="/customers/transfer_amount/<%=senders_id %>/<%= senders_amount %>/<%= customer._id %>/<%= customer.current_balance%>" class="btn btn-outline-success">Select</a>
+					  </p>
+					  
+				  </div>
+			</div>
+		  </div>
+		 <% }) %>
+		</div>
+		</div>
+	</div>
+</div>
+
+<%- include('partials/footer.ejs') %>

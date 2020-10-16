@@ -1,0 +1,17 @@
+<%- include('partials/header.ejs') %>
+<div class="container infoouter ">
+	<div class="text-center block jumbotron" style="margin-top:165px; padding-top:45px; font-family: 'EB Garamond', serif">
+		<h5 class="   text-white d-flex justify-content-center second"> Name - <%= customer.name %></h5>
+		<h5 class="   text-white d-flex justify-content-center second">Email Address - <%= customer.email %></h5>
+		<h5 class="   text-white d-flex justify-content-center second">Contact Number - <%= customer.mobile_number %></h5>
+		<h5 class="   text-white d-flex justify-content-center second">Current Balance - Rs. <%= customer.current_balance %></h5>
+		<br>
+		<p>
+			<a href="/customers" class="btn btn-primary" style="margin-right: 5px;">Go Back</a>
+			<a href="/customers/<%= customer._id %>/<%= customer.current_balance %>/<%= customer.email %>" class="btn btn-success">Transfer Money</a>
+	</p>
+	</div>
+</div>
+
+
+<%- include('partials/footer.ejs') %>

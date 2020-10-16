@@ -1,0 +1,140 @@
+html {
+    scroll-behavior: smooth;
+    
+  }
+
+ .alert {
+ 
+  top:-90px;
+  height:50px;
+  width:100%;
+  left:0;
+  animation-name:slideup;
+  animation-delay:0.5s;
+  animation-duration:0.8s;
+  animation-fill-mode:forwards;
+  animation-timing-function:ease-out;
+}
+
+
+@keyframes slideup {
+  0%{top:-50px}
+  100%{top:0;}
+}
+.table { 
+    animation: fadeInAnimation ease-in-out 2s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} */
+  
+.center { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+}
+
+
+/*.customer{
+  /*background: #0F2027;  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+/*}*/
+/*.cardouter{
+  /*background: #c94b4b;  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #4b134f, #c94b4b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+/*}*/
+
+.card{
+    border-radius: 4px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: plus-lighter;
+    background: #b35858;
+    background: -webkit-linear-gradient(to right, #5d2661, #b35858);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b35858, #5d2661);
+
+  bottom:-50px;
+  height:300px;
+  width:100%;
+  left:0;
+  animation-name:slide;
+  animation-delay:0.5s;
+  animation-duration:0.8s;
+  animation-fill-mode:forwards;
+  animation-timing-function:ease-in-out;
+  }
+  @keyframes slide{
+    0%{bottom:-50px}
+    100%{bottom:0;}
+  }
+  .card:hover{
+    border-color:  rgb(39, 41, 43);;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+ }
+.cardouter{
+  padding: 50px;
+  /*background-color: #aa4b6b;*/
+}
+  .first{
+    margin-top: 45px;
+    padding-top: 30px;
+  }
+  
+  .block{
+      box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .5s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+      cursor: plus pointer;
+      background: rgb(238,174,202);
+      background: linear-gradient(90deg, rgba(238,174,202,1) 30%, rgba(147,218,229,0.8634804263502276) 59%);
+      margin: auto auto auto auto;
+
+  
+      height:320px;
+      width:100%;
+      left:0;
+      animation-name:slideups;
+      animation-delay:0.5s;
+      animation-duration:0.8s;
+      animation-fill-mode:forwards;
+      animation-timing-function:ease-out;
+  }
+  @keyframes slideups {
+    0%{top:-90px}
+    100%{top:0px;}
+  }
+
+  .block:hover{
+     border-radius: 5px;
+     border-color: rgb(238,174,202);
+     transform: scale(1.05);
+     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+  .infoouter{
+    padding:20px;
+    
+  }
+  
+  
+  .second{
+      background: #aa4b6b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+

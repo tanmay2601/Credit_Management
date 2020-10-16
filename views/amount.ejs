@@ -1,0 +1,53 @@
+<%- include('partials/header.ejs') %>
+<div class="container infoouter">
+	<div class="block text-center jumbotron" style="margin-top:165px; padding-top:45px; font-family: 'EB Garamond', serif">
+		<h5 class="  text-white d-flex justify-content-center second" >Name - <%= customer.name %></h5>
+		<h5 class="  text-white d-flex justify-content-center second">Email Address - <%= customer.email %></h5>
+		<h5 class="  text-white d-flex justify-content-center second">Contact Number - <%= customer.mobile_number %></h5>
+		<h5 class="  text-white d-flex justify-content-center second">Current Balance - Rs. <%= customer.current_balance %></h5>
+		<br>
+		<section>
+			<form name="form1" action="/customers/transfer_amount/<%= senders_id %>/<%=senders_amount %>/<%= customer._id %>/<%= customer.current_balance %>"  method="POST" class="form-group">
+				<input class="text-center form-control" type="text" name="transfer_amount" placeholder="Enter amount to transfer" required>
+				<label> Press <strong>Send</strong> to confirm amount transfer</label>
+				<button  name="submit" class="btn btn-info form-control">Send</button>
+			</form>
+		</section>
+    </div>
+</div>
+ 
+		
+
+
+
+
+
+		<!-- Modal
+			<button type="button" class="btn btn-danger form-control" data-toggle="modal" data-target="#exampleModal">
+				Press Ok
+			</button>
+		
+			
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">Money Transfer Message</h5>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<div class="modal-body bg-info">
+					  <b>Money Transferred Successfully !!</b>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+		  
+		 -->	
+
+
+<%- include('partials/footer.ejs') %>
